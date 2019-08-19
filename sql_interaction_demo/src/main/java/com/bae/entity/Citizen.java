@@ -2,6 +2,7 @@ package com.bae.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,15 +12,22 @@ import javax.persistence.Id;
 public class Citizen {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	@Column(name="id")
 	private Long id;
-	
+	@Column(name="citizenid")
 	private Long citizenID;
-	private String fornames;
+	@Column(name="forenames")
+	private String forenames;
+	@Column(name="surname")
 	private String surname;
+	@Column(name="homeaddress")
 	private String homeAddress;
+	@Column(name="dateofbirth")
 	private Date dateOfBirth;
+	@Column(name="sex")
 	private String sex;
+	
 	public Long getId() {
 		return id;
 	}
@@ -35,10 +43,10 @@ public class Citizen {
 		this.citizenID = citizenID;
 	}
 	public String getFornames() {
-		return fornames;
+		return forenames;
 	}
-	public void setFornames(String fornames) {
-		this.fornames = fornames;
+	public void setFornames(String forenames) {
+		this.forenames = forenames;
 	}
 	public String getSurname() {
 		return surname;
