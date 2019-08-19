@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.bae.SqlInteractionDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 93.611 s - in com.bae.SqlInteractionDemoApplicationTests
